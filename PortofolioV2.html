@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Solmaz | Portfolio</title>
+    <link rel="stylesheet" href="StyleV2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- DECORATIVE UI ELEMENTS (Style Valorant) -->
+    <div class="ui-line-top"></div>
+    <div class="ui-line-left"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon"></span> ENES<span class="text-red">_</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#competences">// Compétences</a></li>
+                <li><a href="#projets">// Projets</a></li>
+            </ul>
+            <a href="CV_Enes_Solmaz.pdf" download="CV_Enes_Solmaz.pdf" class="btn-val"><i class="fas fa-download"></i> TÉLÉCHARGER CV</a>
+        </div>
+    </nav>
+
+    <!-- SECTION HÉRO -->
+    <header class="hero" id="accueil">
+        <div class="watermark">A-1</div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-val">ÉTUDIANT BUT INFORMATIQUE</div>
+                <h1>ENES SOLMAZ</h1>
+                <h2 class="roles">DÉVELOPPEUR WEB </h2>
+                
+                <p class="intro">
+                    Étudiant en BUT informatique à l'IUT2 de Grenoble, je me spécialise en cybersécurité et réseaux. 
+                    Je conçois des projets mêlant <strong>technique</strong>, <strong>design</strong> et <strong>résolution de problèmes</strong>.
+                </p>
+
+                <!-- Contacts -->
+                <div class="contact-bar">
+                    <a href="mailto:enes.solmaz@etu.univ-grenoble-alpes.fr" class="contact-item">
+                        <i class="fas fa-envelope"></i> enes.solmaz@etu.univ-grenoble-alpes.fr
+                    </a>
+                    <span class="contact-item"><i class="fas fa-phone"></i> +33 6 58 95 83 69</span>
+                    <span class="contact-item"><i class="fas fa-map-marker-alt"></i> GRENOBLE, FR</span>
+                </div>
+
+                <!-- Réseaux -->
+                <div class="social-bar">
+                    <a href="https://www.linkedin.com/in/enes-solmaz-956333414/" target="_blank" rel="noopener" class="social-btn"><i class="fab fa-linkedin-in"></i> LINKEDIN</a>
+                    <a href="https://github.com/NSaze" target="_blank" rel="noopener" class="social-btn"><i class="fab fa-github"></i> GITHUB</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section id="competences" class="section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h3 class="section-title">BOÎTE À OUTILS // COMPÉTENCES</h3>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="corner-cut"></div>
+                    <div class="icon-box"><i class="fas fa-code"></i></div>
+                    <h4>LANGAGES</h4>
+                    <p>HTML, CSS, JavaScript, Python, SQL, Java</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="corner-cut"></div>
+                    <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+                    <h4>FRAMEWORKS</h4>
+                    <p>React Git, Figma</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="corner-cut"></div>
+                    <div class="icon-box"><i class="fas fa-database"></i></div>
+                    <h4>DONNÉES</h4>
+                    <p>MySQL, PostgreSQL</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="corner-cut"></div>
+                    <div class="icon-box"><i class="fas fa-crosshairs"></i></div>
+                    <h4>OPÉRATIONS</h4>
+                    <p>Travail d'équipe, Communication, Veille</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS (SAÉ) -->
+    <section id="projets" class="section-val">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h3 class="section-title">ARCHIVES // PROJETS
+                
+                </h3>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- SAÉ 1.01 et SAé 1.02-->
+                <article class="project-card" onclick="openModal('chatbot')">
+                    <div class="project-header">
+                        <span class="project-type">BINÔME</span>
+                        <h4>PROJET CHATBOT</h4>
+                    </div>
+                    <div class="project-body">
+                        <p class="context"><strong>CIBLE :</strong> Création de tout ou partie d'une application.</p>
+                        <p class="desc">Concevoir, coder, tester et intégrer une solution informatique.</p>
+                        <div class="tech-tags">
+                            <span>DEV WEB</span><span>TESTS</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-more" onclick="openModal('chatbot'); event.stopPropagation()">
+                            <i class="fas fa-chevron-right"></i> EN SAVOIR PLUS
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="openModal('sql')">
+                    <div class="project-header">
+                        <span class="project-type">BINÔME</span>
+                        <h4>EXTRACTION DONNÉES SQL</h4>
+                    </div>
+                    <div class="project-body">
+                        <p class="context"><strong>CIBLE :</strong> Filtrer et exporter des données erronées.</p>
+                        <p class="desc">Script SQL créant une table propre et générant un CSV pour analyses.</p>
+                        <div class="tech-tags">
+                            <span>SQL</span><span>POSTGRESQL</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-more" onclick="openModal('sql'); event.stopPropagation()">
+                            <i class="fas fa-chevron-right"></i> EN SAVOIR PLUS
+                        </button>
+                    </div>
+                </article>
+
+                <!-- SAÉ 1.03 -->
+                <article class="project-card" onclick="openModal('poste')">
+                    <div class="project-header">
+                        <span class="project-type">SEUL</span>
+                        <h4>INSTALLATION POSTE DEV</h4>
+                    </div>
+                    <div class="project-body">
+                        <p class="context"><strong>CIBLE :</strong> Préparer un poste pour le développement.</p>
+                        <p class="desc">Identifier, installer et configurer un système OS et outils.</p>
+                        <div class="tech-tags">
+                            <span>OS</span><span>RÉSEAU</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-more" onclick="openModal('poste'); event.stopPropagation()">
+                            <i class="fas fa-chevron-right"></i> EN SAVOIR PLUS
+                        </button>
+                    </div>
+                </article>
+
+                <!-- SAÉ 1.04 -->
+                <article class="project-card" onclick="openModal('bdd')">
+                    <div class="project-header">
+                        <span class="project-type">SEUL</span>
+                        <h4>CRÉATION BASE DE DONNÉES</h4>
+                    </div>
+                    <div class="project-body">
+                        <p class="context"><strong>CIBLE :</strong> Implémentation d'une BDD.</p>
+                        <p class="desc">Concevoir une BD relationnelle à partir d'un cahier des charges.</p>
+                        <div class="tech-tags">
+                            <span>SQL</span><span>DONNÉES</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-more" onclick="openModal('bdd'); event.stopPropagation()">
+                            <i class="fas fa-chevron-right"></i> EN SAVOIR PLUS
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="openModal('debian')">
+                    <div class="project-header">
+                        <span class="project-type">SEUL</span>
+                        <h4>SERVEUR DEBIAN</h4>
+                    </div>
+                    <div class="project-body">
+                        <p class="context"><strong>CIBLE :</strong> Déployer une stack web complète sur Debian.</p>
+                        <p class="desc">Guide d'installation reproductible d'un serveur web Linux complet.</p>
+                        <div class="tech-tags">
+                            <span>LINUX</span><span>POSTGRESQL</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-more" onclick="openModal('debian'); event.stopPropagation()">
+                            <i class="fas fa-chevron-right"></i> EN SAVOIR PLUS
+                        </button>
+                    </div>
+                </article>
+
+                <!-- ATOS -->
+                <article class="project-card" onclick="openModal('atos')">
+                    <div class="project-header">
+                        <span class="project-type">ÉQUIPE (5)</span>
+                        <h4>ATOS SITE VITRINE</h4>
+                    </div>
+                    <div class="project-body">
+                        <p class="context"><strong>CIBLE :</strong> Site vitrine Green IT pour Atos.</p>
+                        <p class="desc">Site écoconçu et rapport de synthèse vulgarisé pour un public de 3ème.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span><span>CSS</span><span>GREEN IT</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-more" onclick="openModal('atos'); event.stopPropagation()">
+                            <i class="fas fa-chevron-right"></i> EN SAVOIR PLUS
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MODALES PROJETS ========== -->
+
+    <!-- Overlay -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+    <!-- MODALE : CHATBOT -->
+    <div class="modal" id="modal-chatbot">
+        <div class="modal-inner">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-top">
+                <span class="modal-type">BINÔME &nbsp;·&nbsp; SAÉ 1.01 / 1.02</span>
+                <h2 class="modal-title">PROJET CHATBOT</h2>
+                <div class="modal-tags">
+                    <span>DEV WEB</span><span>TESTS</span><span>JAVASCRIPT</span>
+                </div>
+            </div>
+
+            <!-- 🖼️ ZONE IMAGE — Remplacez le src ci-dessous par votre capture d'écran -->
+            <div class="modal-image-wrapper">
+                <img src="exemple_utilisation.png" alt="Aperçu du projet Chatbot" class="modal-img" />
+                <!-- Supprimez la balise <img> si vous n'avez pas encore d'image -->
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-section">
+                    <h5>// CONTEXTE</h5>
+                    <p>Création de tout ou partie d'une application informatique en binôme. L'objectif était de concevoir un chatbot fonctionnel répondant à un cahier des charges précis.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// CE QUE J'AI FAIT</h5>
+                    <p>Conception, codage, tests et intégration d'une solution informatique. Mise en place d'une interface conversationnelle, gestion des entrées utilisateur et réponses automatisées.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// COMPÉTENCES DÉVELOPPÉES</h5>
+                    <ul class="modal-list">
+                        <li>Réaliser un développement d'application</li>
+                        <li>Optimiser des applications informatiques</li>
+                        <li>Collaborer au sein d'une équipe informatique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE : EXTRACTION SQL -->
+    <div class="modal" id="modal-sql">
+        <div class="modal-inner">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-top">
+                <span class="modal-type">BINÔME &nbsp;·&nbsp; 3 JOURS</span>
+                <h2 class="modal-title">EXTRACTION DONNÉES SQL</h2>
+                <div class="modal-tags">
+                    <span>LINUX</span><span>APACHE</span><span>PHP</span><span>POSTGRESQL</span>
+                </div>
+            </div>
+
+            <!-- 🖼️ ZONE IMAGE — Remplacez le src ci-dessous par votre capture d'écran -->
+            <div class="modal-image-wrapper">
+                <img src="VOTRE_IMAGE_SQL.png" alt="Aperçu du projet SQL" class="modal-img" />
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-section">
+                    <h5>// CONTEXTE</h5>
+                    <p>Projet réalisé en binôme sur 3 jours. Livrable : un script SQL créant la table filtrée et exportant le CSV.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// COMPÉTENCES DÉVELOPPÉES</h5>
+                    <ul class="modal-list">
+                        <li>Écrire des requêtes PostgreSQL complexes pour filtrer des données erronées</li>
+                        <li>Créer une table propre à partir de données brutes</li>
+                        <li>Générer un CSV exploitable pour analyses statistiques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE : POSTE DEV -->
+    <div class="modal" id="modal-poste">
+        <div class="modal-inner">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-top">
+                <span class="modal-type">SEUL &nbsp;·&nbsp; SAÉ 1.03</span>
+                <h2 class="modal-title">INSTALLATION POSTE DEV</h2>
+                <div class="modal-tags">
+                    <span>OS</span><span>RÉSEAU</span><span>LINUX</span>
+                </div>
+            </div>
+
+            <!-- 🖼️ ZONE IMAGE — Remplacez le src ci-dessous par votre capture d'écran -->
+            <div class="modal-image-wrapper">
+                <img src="CarteM.png" alt="Aperçu de l'installation du poste" class="modal-img" />
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-section">
+                    <h5>// CONTEXTE</h5>
+                    <p>Préparation d'un environnement de développement complet depuis zéro : choix du système d'exploitation, configuration réseau et installation des outils nécessaires.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// CE QUE J'AI FAIT</h5>
+                    <p>Identification, installation et configuration d'un système OS et des outils de développement. Mise en réseau et documentation du processus.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// COMPÉTENCES DÉVELOPPÉES</h5>
+                    <ul class="modal-list">
+                        <li>Installer et configurer un environnement de travail</li>
+                        <li>Administrer un système Linux</li>
+                        <li>Documenter une procédure technique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE : BDD -->
+    <div class="modal" id="modal-bdd">
+        <div class="modal-inner">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-top">
+                <span class="modal-type">SEUL &nbsp;·&nbsp; SAÉ 1.04</span>
+                <h2 class="modal-title">CRÉATION BASE DE DONNÉES</h2>
+                <div class="modal-tags">
+                    <span>SQL</span><span>DONNÉES</span><span>POSTGRESQL</span>
+                </div>
+            </div>
+
+            <!-- 🖼️ ZONE IMAGE — Remplacez le src ci-dessous par votre schéma ou capture -->
+            <div class="modal-image-wrapper">
+                <img src="BD1.png" alt="Schéma de la base de données" class="modal-img" />
+                <img src="BD2.png" alt="Schéma de la base de données" class="modal-img" />
+
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-section">
+                    <h5>// CONTEXTE</h5>
+                    <p>Conception et implémentation d'une base de données relationnelle à partir d'un cahier des charges client.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// CE QUE J'AI FAIT</h5>
+                    <p>Modélisation du schéma relationnel (MCD/MLD), création des tables, contraintes d'intégrité, et requêtes SQL pour l'exploitation des données.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// COMPÉTENCES DÉVELOPPÉES</h5>
+                    <ul class="modal-list">
+                        <li>Concevoir et modéliser une base de données</li>
+                        <li>Écrire des requêtes SQL complexes</li>
+                        <li>Garantir l'intégrité des données</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE : SERVEUR DEBIAN -->
+    <div class="modal" id="modal-debian">
+        <div class="modal-inner">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-top">
+                <span class="modal-type">INDIVIDUEL</span>
+                <h2 class="modal-title">SERVEUR DEBIAN</h2>
+                <div class="modal-tags">
+                    <span>POSTGRESQL</span><span>SQL</span><span>LINUX</span>
+                </div>
+            </div>
+
+            <!-- 🖼️ ZONE IMAGE — Remplacez le src ci-dessous par votre capture d'écran -->
+            <div class="modal-image-wrapper">
+                <img src="VOTRE_IMAGE_DEBIAN.png" alt="Aperçu du projet Serveur Debian" class="modal-img" />
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-section">
+                    <h5>// CONTEXTE</h5>
+                    <p>Projet individuel. Le livrable principal était le guide d'installation, pas le serveur lui-même.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// COMPÉTENCES DÉVELOPPÉES</h5>
+                    <ul class="modal-list">
+                        <li>Déployer une stack web complète sur Debian</li>
+                        <li>Rédiger un guide suffisamment précis pour qu'un tiers puisse reproduire l'installation à l'identique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE : ATOS SITE VITRINE -->
+    <div class="modal" id="modal-atos">
+        <div class="modal-inner">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-top">
+                <span class="modal-type">ÉQUIPE (5) &nbsp;·&nbsp; 3 SEMAINES</span>
+                <h2 class="modal-title">ATOS SITE VITRINE ÉCOLOGIQUE</h2>
+                <div class="modal-tags">
+                    <span>HTML</span><span>CSS</span><span>GREEN IT</span>
+                </div>
+            </div>
+
+            <!-- 🖼️ ZONE IMAGE — Remplacez le src ci-dessous par une capture du site -->
+            <div class="modal-image-wrapper">
+                <img src="homepage.png" alt="Aperçu du site vitrine Atos" class="modal-img" />
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-section">
+                    <h5>// CONTEXTE</h5>
+                    <p>Projet d'équipe (5 personnes) mené sur 3 semaines. Responsable du développement, en binôme. Livrables : rapport de synthèse sur Atos adapté à un public de 3ème, et le site hébergé.</p>
+                </div>
+                <div class="modal-section">
+                    <h5>// COMPÉTENCES DÉVELOPPÉES</h5>
+                    <ul class="modal-list">
+                        <li>Développer un site HTML/CSS sobre (images légères, code minimal)</li>
+                        <li>Appliquer les principes du Green IT</li>
+                        <li>Synthétiser des informations d'entreprise pour un public non technique</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h5>// RESSOURCES</h5>
+                    <ul class="modal-list">
+                        <li><a href="https://atos.buzz" target="_blank" class="modal-link">Homepage — atos.buzz <i class="fas fa-external-link-alt"></i></a></li>
+                        <li><a href="https://atos.buzz/clients" target="_blank" class="modal-link">Page clients — atos.buzz <i class="fas fa-external-link-alt"></i></a></li>
+                        <li>Archive du site web hébergé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById('modalOverlay').classList.add('active');
+            document.getElementById('modal-' + id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.querySelectorAll('.modal.active').forEach(m => m.classList.remove('active'));
+            document.getElementById('modalOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        // Affiche un placeholder si l'image n'existe pas encore
+        document.querySelectorAll('.modal-img').forEach(img => {
+            img.addEventListener('error', function() {
+                const wrapper = this.parentElement;
+                this.style.display = 'none';
+                wrapper.innerHTML = `
+                    <div class="modal-image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>// IMAGE À AJOUTER</span>
+                        <small style="font-family:var(--font-body);font-size:0.8rem;opacity:0.6;">Remplacez le src de la balise &lt;img&gt; dans le HTML</small>
+                    </div>`;
+            });
+        });
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h5>// CERTIFICATIONS</h5>
+                <ul>
+                    <li>Certification PIX</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>// LANGUES</h5>
+                <ul>
+                    <li><strong>FR:</strong> MATERNEL</li>
+                    <li><strong>EN:</strong> B2 / C1</li>
+                    <li><strong>TR:</strong> B1</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>// CENTRE D'INTÉRÊTS</h5>
+                <ul>
+                    <li>Automobile</li>
+                    <li>SPORT</li>
+                    <li>ESPORT & GAMING</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
